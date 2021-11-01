@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package order;
+
+service Order {
+  rpc OrderFood (Request) returns (Reply);
+}
+
+message Request {
+  string message = 1;
+}
+
+message Reply {
+  string message = 1;
+}
