@@ -19,7 +19,7 @@ namespace GrpcClient
             var client = new Order.OrderClient(channel);
             while (true)
             {
-                Console.Write("Нажмите что-нибудь, чтобы ознакомиться с сонетами Шекспира: ");
+                Console.Write("Закажите блюдо: ");
                 var message = Console.ReadLine();
 
                 // обмениваемся сообщениями с сервером
